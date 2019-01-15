@@ -285,7 +285,7 @@
       routeToItem(item, onError) {
         let route = item.route || item.index;
         try {
-          this.$router.push(route, () => {}, onError);
+          this.$router.replace(route, () => {}, onError);
         } catch (e) {
           console.error(e);
         }
